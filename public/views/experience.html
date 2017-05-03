@@ -1,0 +1,7 @@
+<div id="{{project.modalID}}" ng-repeat="project in projectz" class="project" ng-mouseover="folderMouseover()"
+     ng-mouseleave="folderMouseleave()" ng-click="openModal($event)">
+	<div class="folder" style="background-image: url('img/{{project.folder}}');background-size: contain;"></div>
+	<div>{{project.label}}</div>
+</div>
+
+<modal id="projectModal" ng-controller="modalController"></modal>

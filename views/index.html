@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Sam Beckett | Software Engineer</title>
+	<meta name="description" content="Sam Beckett || Software Engineer || Web Guru">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<script src="js/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/modal.directive.js"></script>
+	<script src="js/modal.service.js"></script>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet/less" type="text/css" href="css/modal.less">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body ng-app="mainApp" ng-controller="mainController">
+	<div id="pageContainer">
+		<div id="navContainer">
+			<div id="navHeader">
+				<img class="circle-square" src="img/avatar.png">
+				<h1>SAM BECKETT</h1>
+				<h4>Software Engineer</h4>
+			</div>
+			<nav>
+				<div id="navMenu">
+					<a href="/about"><div ng-class="{active: activetab == 'about'}" class="navItem">
+						<div ng-class="{active: activetab == 'about'}"></div>
+						<div class="navLabel">ABOUT</div>
+					</div></a>
+					<a href="/experience"><div ng-class="{active: activetab == 'experience'}" class="navItem">
+						<div ng-class="{active: activetab == 'experience'}"></div>
+						<div class="navLabel">EXPERIENCE</div>
+					</div></a>
+					<a href="/contact"><div ng-class="{active: activetab == 'contact'}" class="navItem">
+						<div ng-class="{active: activetab == 'contact'}"></div>
+						<div class="navLabel">CONTACT</div>
+					</div></a>
+				</div>
+			</nav>
+		</div>
+		<div id="topicContainer">
+			<div ng-view></div>
+		</div>
+	</div>
+</body>
+</html>

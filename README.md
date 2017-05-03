@@ -1,2 +1,1 @@
-# resume
-personal site for my resume
+# Personal Resume Site

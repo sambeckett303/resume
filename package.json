@@ -1,0 +1,26 @@
+{
+  "name": "PersonalSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambeckett303/resume.git"
+  },
+  "author": "Sam Beckett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sambeckett303/resume/issues"
+  },
+  "homepage": "https://github.com/sambeckett303/resume",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "body-parser": "^1.17.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0",
+    "express-session": "^1.15.1"
+  }
+}

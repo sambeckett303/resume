@@ -1,0 +1,67 @@
+/* MODAL STYLES */
+modal {
+    display: none;
+
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        overflow: auto;
+
+        .modal-body {
+            background: #9c9c9c;
+            color: #f9f9f9;
+            position: relative;
+            width: 65%;
+            margin: 40px auto;
+            border-radius: 5px;
+        }
+        .modal-header {
+            background: #5d5d5d;
+            border-radius: 5px 5px 0px 0px;
+        }
+        .modal-content {
+            padding: 10px 20px;
+            max-height: 420px;
+            overflow: auto;
+        }
+        .modal-title {
+            padding-left: 15px;
+            color: #ffffff;
+        }
+        .modal-exit {
+            position: absolute;
+            right: 7px;
+            top: 5px;
+            background: #9c9c9c;
+            color: #3e3e3e;
+            padding: 5px 11px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .modal-background {
+        /* modal background fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* semi-transparent black  */
+        background-color: #000;
+        opacity: 0.75;
+        
+        /* z-index must be below .modal and above everything else  */
+        z-index: 900;
+    }
+}
+
+body.modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}

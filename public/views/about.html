@@ -1,0 +1,19 @@
+<h1>Summary<h1>
+<hr>
+<p style="font-size: 22px;">
+	I am a Software Engineer with a strong focus on web development. My experience
+	at Seagate has developed excellent professional communication skills, both with teammates
+	and customers. I have an eye for good design and fluid user experience, and understand
+	the importance of the bigger picture.
+</p>
+<h1>Skills</h1>
+<hr>
+<table style="width: 100%">
+<tr ng-mouseover="skillHover()" ng-repeat="skill in skillz">
+	<td><span style="font-size:22px;">{{skill.skillName}}</span></td>
+	<td style="width: 80%">
+		<div class="skillBar">
+			<div class="innerSkillBar" style="width: {{skill.skillAmount}}%"></div>
+		</div>
+	</td>
+</tr>

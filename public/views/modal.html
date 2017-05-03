@@ -1,0 +1,14 @@
+<div class="modal">
+    <div class="modal-body">
+        <div class="modal-header">
+            <div class="modal-title">
+                <h1>{{modalTitle}}</h1>
+            </div>
+            <div class="modal-exit" ng-click="closeModal()">X</div>
+        </div>
+        <div class=" modal-content">
+            <p ng-bind-html="modalContent | to_trusted"></p>
+        </div>
+    </div>
+</div>
+<div class="modal-background"></div>

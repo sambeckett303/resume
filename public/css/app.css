@@ -1,0 +1,228 @@
+/* General */
+
+html {
+  min-height:100%;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  position:relative;
+  width:100%;
+}
+
+body {
+  background-color:#e6e6e6;
+  color:#FFF;
+  font-family: Avenir;
+  font-weight:100;
+  margin:0;
+  min-height:100%;
+  width:100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 5px;
+	font-weight: 300;
+}
+
+table > td {
+	padding: 0;
+}
+
+#pageContainer {
+	height: 100vh;
+    width: 100%;
+}
+
+#pageTable {
+	width: 100%;
+	height: 100vh;
+}
+
+#pageTable > td {
+	padding: 0;
+}
+
+/* Navigation */
+
+#navContainer {
+    width: 300px;
+    height: 100%;
+    background: #CCCCCC;
+    float: left;
+}
+
+#navMenu {
+	height: 250px;
+	text-align: center;
+}
+
+.navItem {
+	height: 33%;
+}
+
+.navLabel {
+    padding-top: 32px;
+    font-size: larger;
+    letter-spacing: 5px;
+}
+
+#navHeader {
+    font-family: Avenir;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.circle-square {
+	border-radius: 50%;
+}
+
+.active {
+    background: #919291;
+}
+
+
+/* Topic */
+
+#topicContainer {
+    height: 97%;
+    background: #919291;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.skillBar {
+	background: #000;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.innerSkillBar {
+	background: #5a5a5a;;
+    height: 30px;
+}
+
+.project {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.folder {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+#contact {
+  width:100%;
+  height:100%;
+  margin 0 auto;
+  background: #5d5d5d;
+  display: flex;
+}
+
+#findmeonline {
+  width:100%;
+  height:100%;
+  margin 0 auto;
+  background: #5d5d5d;
+  display: flex;
+  margin-top: 10px;
+}
+
+.container {
+    width: inherit;
+    height: auto;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+#contact .container form input,
+#contact .container form textarea {
+  width:96%;
+  height:30px;
+  padding:5px 10px;
+  font-size: 12px;
+  color:#999;
+  letter-spacing:1px;
+  background: #FFF;
+  border:2px solid #FFF;
+  margin-bottom:25px;
+  -webkit-transition:all .1s ease-in-out;
+  -moz-transition:all .1s ease-in-out;
+  -ms-transition:all .1s ease-in-out;
+  -o-transition:all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+  border:2px solid #dd4545;
+  color:#999;
+}
+
+#contact .container form textarea {
+  height:150px;
+}
+
+#contact .container form .submit {
+  width:100%;
+  padding:5px 10px;
+  font-size: 12px;
+  letter-spacing:1px;
+  background:#dd4545;
+  height:40px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#FFF;
+  border:2px solid #b43838;
+  -webkit-transition:all .1s ease-in-out;
+  -moz-transition:all .1s ease-in-out;
+  -ms-transition:all .1s ease-in-out;
+  -o-transition:all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+}
+
+#contact .container form .submit:hover {
+  color:#FFF;
+  border:2px solid #dd4545;
+  background: #b43838;
+  cursor:pointer;
+}
+
+#contact .container form .required {
+  color:#b43838;
+}
+
+.onlineContainer {
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+  background: #9e9e9e;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+.onlineContainer:hover {
+  background: #929292;
+  -ms-transform: scale(1.03,1.03);
+  -webkit-transform: scale(1.03,1.03);
+  transform: scale(1.03,1.03);
+  box-shadow: 2px 2px 20px #000000;
+}
+
+
