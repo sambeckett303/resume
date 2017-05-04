@@ -1,11 +1,11 @@
 <section id="contact">
 	<div class="container">
 	<h1>Email me:</h1>
-	<form name="htmlform" method="post" action="/sendemail">
-		<input type="text" name="first_name" placeholder="NAME" required>  
-		<input  type="email" name="email" placeholder="MAIL" required>
-		<textarea name="comments" placeholder="MESSAGE" required ></textarea>
-		<button name="send" type="submit" class="submit">SEND</button>
+	<form ng-submit="submit()">
+		<input type="text" ng-model="name" placeholder="YOUR NAME" required>  
+		<input  type="email" ng-model="email" placeholder="YOUR EMAIL" required>
+		<textarea ng-model="comments" placeholder="MESSAGE" required ></textarea>
+		<button type="submit" class="submit">SEND</button>
 	</form>
 	</div>
 </section>
@@ -26,3 +26,5 @@
 		</a>
 	</div>
 </section>
+
+<modal id="emailModal" ng-controller="modalController"></modal>

@@ -120,14 +120,35 @@ myApp.controller('experienceController', function($scope, $sce, ModalService) {
 		var id = e.currentTarget.id;
 		ModalService.setModalContent(this.project.modalContent);
 		ModalService.setModalTitle(this.project.label);
-		ModalService.Open(e);
+		ModalService.Open('projectModal');
 	};
 	$scope.closeModal = function() {
 		ModalService.Close();
 	};
 });
 
-myApp.controller('contactController', function() {});
+myApp.controller('contactController', function($scope, $http, ModalService) {
+	$scope.submit = function () {
+		var dataStr = 'name=' + $scope.name + '&email=' + $scope.email + '&comments=' + $scope.comments;
+		$http({
+		    method: 'GET',
+		    url: '/sendemail',
+		    params: { name: $scope.name, email: $scope.email, comments: $scope.comments },
+		    //headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+		}).then(function successCallback(response) {
+			ModalService.setModalTitle('Thank you!');
+			ModalService.setModalContent('Successfully sent your message to my email, I will reply to it as promptly as I can. Thank you for your interest!');
+	    	ModalService.Open('emailModal');
+	    }, function errorCallback(response) {
+	    	ModalService.setModalTitle('Uh oh...');
+			ModalService.setModalContent('Sorry, looks like something went wrong. You can email using your email provider at sambeckett303@gmail.com');
+	    	ModalService.Open('emailModal');
+	    });
+	};
+	$scope.closeModal = function() {
+		ModalService.Close();
+	};
+});
 
 myApp.controller('modalController', function($scope, ModalService) {
 	

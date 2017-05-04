@@ -27,13 +27,10 @@ function Service() {
         modals = _.without(modals, modalToRemove);
     }
 
-    function Open(event) {
-        var id = event.currentTarget.id;
-        // set modalController data
-
+    function Open(id) {
         // open modal specified by id
-        //var modal = _.findWhere(modals, { id: id });
-        var modal = modals[0];
+        var modal = _.findWhere(modals, { id: id });
+        //var modal = modals[0];
         this.currentModal = modal;
         modal.open();
     }
