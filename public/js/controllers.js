@@ -107,7 +107,7 @@ myApp.controller('experienceController', function($scope, $sce, ModalService) {
 			modalID: "scrollmagic",
 			label: "Parallax Scrolling Resume",
 			folder: "folder.png",
-			modalContent: "Created a paralax scrolling resume as a side project during the summer of 2014. This was built using the Scrollmagic framework, and uses many pretty CSS features. You can view the scrolling website <a href=\"http://www.samuelbeckett.info\">here</a>.")
+			modalContent: "Created a paralax scrolling resume as a side project during the summer of 2014. This was built using the Scrollmagic framework, and uses many pretty CSS features. You can view the scrolling website <a href=\"http://www.samuelbeckett.info\">here</a>."
 		}
 	];
 	$scope.folderMouseover = function () {
