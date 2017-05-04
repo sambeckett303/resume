@@ -101,7 +101,7 @@ myApp.controller('experienceController', function($scope, $sce, ModalService) {
 			modalID: "this",
 			label: "This site",
 			folder: "folder.png",
-			modalContent: "This website was a litle side project for me to learn how Angular works a little more. You can see the code for it <a href=\"https://github.com/sambeckett303/resume\">on github</a>.")
+			modalContent: "This website was a litle side project for me to learn how Angular works a little more. You can see the code for it <a href=\"https://github.com/sambeckett303/resume\">on github</a>."
 		},
 		{
 			modalID: "scrollmagic",
