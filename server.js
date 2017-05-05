@@ -2,8 +2,9 @@ const express = require('express'),
     session = require('express-session'),
     bodyParser = require('body-parser'),
     nodemailer = require('nodemailer'),
-    credentials = require('./credentials.js'),
     smtpTransport = require("nodemailer-smtp-transport"),
+    email = process.env.EMAILADDR,
+    emailPassword = process.env.EMAILPSW,
     port = process.env.PORT || 8888,
     app = express();
 
@@ -12,8 +13,8 @@ let transport = nodemailer.createTransport(smtpTransport({
     secureConnection : false,
     //port: 587,
     auth : {
-        user : credentials.email,
-        pass : credentials.emailPassword
+        user : email,
+        pass : emailPassword
     }
 }));
 
